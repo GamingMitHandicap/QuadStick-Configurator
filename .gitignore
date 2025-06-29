@@ -4,6 +4,7 @@ dist
 
 settings.repr
 log.txt
+old_code.txt
 
 # Need testing
 csv_editor.py
