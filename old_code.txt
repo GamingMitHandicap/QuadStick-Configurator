@@ -1,0 +1,236 @@
+    # def updateLocaleTexts(self, current_locale):
+    #     # Rename tabs
+    #     # new_tab_names = [GetLocaleText("Game_Files"), GetLocaleText("Joystick"), GetLocaleText("Misc"), GetLocaleText("Firmware"), GetLocaleText("Voice_Control"), GetLocaleText("Voice_Files"), GetLocaleText("External_Pointers")]
+    #     # self.tabs.rename_tabs_by_index(new_tab_names) #TODO
+
+    #     # Game Files Tab ##
+
+    #     # Flash Drive Profiles
+    #     self.label_csv_files.configure(text=GetLocaleText("In_QuadStick"))
+
+    #     self.list_csv_files.heading("#1", text=GetLocaleText("ID"))
+    #     self.list_csv_files.heading("#2", text=GetLocaleText("Filename"))
+    #     self.list_csv_files.heading("#3", text=GetLocaleText("Spreadsheet"))
+
+    #     self.btn_load_and_run.configure(text=GetLocaleText("Load_and_Run_File"))
+    #     self.tooltip_load_and_run.configure(message=GetLocaleText("Load_and_Run_File_Description"))
+
+    #     self.btn_delete_csv.configure(text=GetLocaleText("Remove_from_QuadStick"))
+    #     self.tooltip_delete_csv.configure(message=GetLocaleText("Remove_from_QuadStick_Description"))
+
+    #     self.btn_print_file_list.configure(text=GetLocaleText("Print_file_list"))
+    #     self.tooltip_print_file_list.configure(message=GetLocaleText("Print_file_list_Description"))
+
+    #     # Factory Profiles
+    #     self.label_online_game_files.configure(text=GetLocaleText("QuadStick_Factory_profiles"))
+
+    #     self.list_online_game_files.heading("#1", text=GetLocaleText("Filename"))
+    #     self.list_online_game_files.heading("#2", text=GetLocaleText("Spreadsheet"))
+
+    #     self.btn_edit_spreadsheet.configure(text=GetLocaleText("Open_Configuration_Spreadsheet"))
+    #     self.tooltip_edit_spreadsheet.configure(message=GetLocaleText("Open_Configuration_Spreadsheet_Description"))
+
+    #     self.btn_download_csv.configure(text=GetLocaleText("Download_to_QuadStick"))
+    #     self.tooltip_download_csv.configure(message=GetLocaleText("Download_to_QuadStick_Description"))
+
+    #     # User Custom Profiles
+    #     self.label_user_game_files.configure(text=GetLocaleText("User_Custom_profiles"))
+
+    #     self.list_user_game_files.heading("#1", text=GetLocaleText("Filename"))
+    #     self.list_user_game_files.heading("#2", text=GetLocaleText("Spreadsheet"))
+
+    #     self.btn_add_user_game.configure(text=GetLocaleText("Add_Game_to_User_List"))
+    #     self.tooltip_add_user_game.configure(message=GetLocaleText("Add_Game_to_User_List_Description"))
+
+    #     self.btn_remove_user_game.configure(text=GetLocaleText("Remove_Game_from_User_List"))
+    #     self.tooltip_remove_user_game.configure(message=GetLocaleText("Remove_Game_from_User_List_Description"))
+
+    #     ## Joystick Tab ##
+    #     self.label_joystick_info.configure(text=GetLocaleText("Joystick_Info"))
+
+    #     self.label_slider_linking.configure(text=GetLocaleText("Link_Sliders"))
+    #     self.slider_linking_all.configure(text=GetLocaleText("all"))
+    #     self.slider_linking_horizontal.configure(text=GetLocaleText("horizontal"))
+    #     self.slider_linking_vertical.configure(text=GetLocaleText("vertical"))
+    #     self.slider_linking_none.configure(text=GetLocaleText("none"))
+
+    #     self.label_joystick_preference.configure(text=GetLocaleText("Calculated_joystick_preference_values"))
+
+    #     self.list_joystick_preference.heading("#1", text=GetLocaleText("Preference"))
+    #     self.list_joystick_preference.heading("#2", text=GetLocaleText("Value"))
+
+    #     ## Misc Tab ##
+
+    #     # Sliders top
+
+    #     # Mouse Speed
+    #     self.label_mouse_speed.configure(text=GetLocaleText("Mouse_Speed"))
+    #     self.tooltip_mouse_speed.configure(message=GetLocaleText("Mouse_Speed_Description"))
+
+    #     # Brightness
+    #     self.label_brightness.configure(text=GetLocaleText("Brightness"))
+    #     self.tooltip_brightness.configure(message=GetLocaleText("Brightness_Description"))
+
+    #     # Volume
+    #     self.label_volume.configure(text=GetLocaleText("Volume"))
+    #     self.tooltip_volume.configure(message=GetLocaleText("Volume_Description"))
+
+    #     # D-Pad inner ring
+    #     self.label_D_Pad_inner_ring.configure(text=GetLocaleText("D_Pad_inner_ring"))
+    #     self.tooltip_D_Pad_inner_ring.configure(message=GetLocaleText("D_Pad_inner_ring_Description"))
+
+    #     # D-Pad inner ring
+    #     self.label_D_Pad_outer_ring.configure(text=GetLocaleText("D_Pad_outer_ring"))
+    #     self.tooltip_D_Pad_outer_ring.configure(message=GetLocaleText("D_Pad_outer_ring_Description"))
+
+    #     # Sliders bottom
+
+    #     # Sip and Puff max threshold
+    #     self.label_SP_max.configure(text=GetLocaleText("Sip_and_Puff_max_pressure"))
+    #     self.tooltip_SP_max.configure(message=GetLocaleText("Sip_and_Puff_max_pressure_Description"))
+
+    #     # Sip and Puff max threshold
+    #     self.label_SP_max.configure(text=GetLocaleText("Sip_and_Puff_max_pressure"))
+    #     self.tooltip_SP_max.configure(message=GetLocaleText("Sip_and_Puff_max_pressure_Description"))
+
+    #     # Sip and Puff high threshold
+    #     self.label_SP_high.configure(text=GetLocaleText("Sip_and_Puff_high_threshold"))
+    #     self.tooltip_SP_high.configure(message=GetLocaleText("Sip_and_Puff_high_threshold_Description"))
+
+    #     # Sip and Puff low threshold
+    #     self.label_SP_low.configure(text=GetLocaleText("Sip_and_Puff_low_threshold"))
+    #     self.tooltip_SP_low.configure(message=GetLocaleText("Sip_and_Puff_low_threshold_Description"))
+
+    #     # Lip maximum
+    #     self.label_Lip_max.configure(text=GetLocaleText("Lip_maximum"))
+    #     self.tooltip_Lip_max.configure(message=GetLocaleText("Lip_maximum_Description"))
+
+    #     # Lip minimum
+    #     self.label_Lip_min.configure(text=GetLocaleText("Lip_minimum"))
+    #     self.tooltip_Lip_min.configure(message=GetLocaleText("Lip_minimum_Description"))
+
+    #     # More Settings
+
+    #     self.label_misc_settings.configure(text=GetLocaleText("Other_settings"))
+
+    #     # misc_settings_1_new_tab_names = [GetLocaleText("Digital_Outputs"), GetLocaleText("Mouse"), GetLocaleText("Bluetooth")]
+    #     # self.tabs_misc_settings1._segmented_button.configure(texts=misc_settings_1_new_tab_names)
+
+    #     # Digital Outputs
+    #     self.checkbox_do_1.configure(text=GetLocaleText("Digital_output_1"))
+    #     self.tooltip_do_1.configure(message=GetLocaleText("Digital_output_1_Description"))
+
+    #     self.checkbox_do_2.configure(text=GetLocaleText("Digital_output_2"))
+    #     self.tooltip_do_2.configure(message=GetLocaleText("Digital_output_2_Description"))
+
+    #     # Mouse
+    #     self.checkbox_circular_deadzone.configure(text=GetLocaleText("Enable_Circular_Dead_Zone"))
+    #     self.tooltip_circular_deadzone.configure(message=GetLocaleText("Enable_Circular_Dead_Zone_Description"))
+
+    #     self.label_mouse_response.configure(text=GetLocaleText("Mouse_Response_Curve"))
+    #     self.tooltip_mouse_response.configure(message=GetLocaleText("Mouse_Response_Curve_Description"))
+
+    #     # Bluetooth
+    #     self.checkbox_enable_serial_port.configure(text=GetLocaleText("Enable_file_management_over_serial_port"))
+    #     self.tooltip_enable_serial_port.configure(message=GetLocaleText("Enable_file_management_over_serial_port_Description"))
+
+    #     self.label_BT_device_mode.configure(text=GetLocaleText("Device_Mode"))
+    #     self.tooltip_BT_device_mode.configure(message=GetLocaleText("Device_Mode_Description"))
+
+    #     self.label_BT_auth_mode.configure(text=GetLocaleText("Auth"))
+    #     self.tooltip_BT_auth_mode.configure(message=GetLocaleText("Auth_Description"))
+
+    #     # Sip and Puff misc
+    #     self.checkbox_select_files.configure(text=GetLocaleText("Enable_select_file_with_side_tube"))
+    #     self.tooltip_select_files.configure(message=GetLocaleText("Enable_select_file_with_side_tube_Description"))
+
+    #     self.checkbox_swap.configure(text=GetLocaleText("Enable_swap_inputs_with_side_tube"))
+    #     self.tooltip_swap.configure(message=GetLocaleText("Enable_swap_inputs_with_side_tube_Description"))
+
+    #     self.label_SP_low_delay.configure(text=GetLocaleText("Low_threshold_delay"))
+    #     self.tooltip_SP_low_delay.configure(message=GetLocaleText("Low_threshold_delay_Description"))
+
+    #     self.label_SP_high_delay.configure(text=GetLocaleText("High_threshold_delay"))
+    #     self.tooltip_SP_high_delay.configure(message=GetLocaleText("High_threshold_delay_Description"))
+
+    #     # USB Settings
+    #     # self.tab_misc_usb.configure(text=GetLocaleText("USB_settings"))
+    #     self.checkbox_ps4_boot_mode.configure(text=GetLocaleText("Enable_boot_in_PS4_USB_mode"))
+    #     self.tooltip_ps4_boot_mode.configure(message=GetLocaleText("Enable_boot_in_PS4_USB_mode_Description"))
+
+    #     self.checkbox_Titan2.configure(text=GetLocaleText("Titan_Two_PS4_flag"))
+    #     self.tooltip_titan2.configure(message=GetLocaleText("Titan_Two_PS4_flag_Description"))
+
+    #     self.checkbox_enable_usb_comm.configure(text=GetLocaleText("Enable_Voice_Commands_over_USB"))
+    #     self.tooltip_enable_usb_comm.configure(message=GetLocaleText("Enable_Voice_Commands_over_USB_Description"))
+
+    #     self.checkbox_usb_A_host_mode.configure(text=GetLocaleText("Enable_USB_A_Host_mode"))
+    #     self.tooltip_usb_A_host_mode.configure(message=GetLocaleText("Enable_USB_A_Host_mode_Description"))
+
+    #     # Virtual gamepad emulator
+    #     self.checkbox_enable_vg_X360.configure(text=GetLocaleText("Enable_virtual_XBox_controller_emulation"))
+    #     self.tooltip_enable_vg_X360.configure(message=GetLocaleText("Enable_virtual_XBox_controller_emulation_Description"))
+        
+    #     self.checkbox_enable_vg_DS4.configure(text=GetLocaleText("Enable_virtual_Dualshock_4_emulation"))
+    #     self.tooltip_enable_vg_DS4.configure(message=GetLocaleText("Enable_virtual_Dualshock_4_emulation_Description"))
+
+    #     self.checkbox_enable_HIDHide.configure(text=GetLocaleText("Enable_HIDHide"))
+    #     self.tooltip_enable_HIDHide.configure(message=GetLocaleText("Enable_HIDHide_Description"))
+
+    #     # Program Settings
+    #     self.label_program_settings.configure(text=GetLocaleText("Program_Settings"))
+
+    #     self.label_locale.configure(text=GetLocaleText("Language"))
+
+    #     self.choice_locale.configure(values=self.GetLocaleNames())
+    #     self.choice_locale.set(GetLocaleText(current_locale))
+
+    #     self.tooltip_change_locale.configure(message=GetLocaleText("Language_Description"))
+
+    #     self.label_appearance_mode.configure(text=GetLocaleText("Appearance_Mode"))
+    #     self.choice_appearance_mode.configure(values=[GetLocaleText("Light"), GetLocaleText("Dark"), GetLocaleText("System")])
+    #     self.tooltip_appearance_mode.configure(message=GetLocaleText("Appearance_Mode_Description"))
+
+    #     current_appearance_mode = ctk.get_appearance_mode() # TODO is System Mode
+    #     self.choice_appearance_mode.set(GetLocaleText(current_appearance_mode))
+
+    #     self.checkbox_minimize_to_tray.configure(text=GetLocaleText("Minimize_to_tray"))
+    #     self.tooltip_minimize_to_tray.configure(message=GetLocaleText("Minimize_to_tray_Description"))
+
+    #     self.checkbox_start_minimized.configure(text=GetLocaleText("Start_minimized"))
+    #     self.tooltip_start_minimized.configure(message=GetLocaleText("Start_minimized_Description"))
+
+    #     ## Firmware Tab ##
+    #     self.label_current_firmware.configure(text=GetLocaleText("Current_Firmware"))
+    #     self.label_new_version.configure(text=GetLocaleText("New_Firmware_Version_Info"))
+    #     self.label_Build_number.configure(text=GetLocaleText("Build_number"))
+    #     self.label_firmware_update.configure(text=GetLocaleText("Firmware_Update_Info"))
+    #     self.label_available_firmware.configure(text=GetLocaleText("Available_Firmware"))
+    #     self.btn_download_selected_build.configure(text=GetLocaleText("Download_Firmware"))
+
+    #     self.list_ctrl_firmware.heading("#1", text=GetLocaleText("Build"))
+    #     self.list_ctrl_firmware.heading("#2", text=GetLocaleText("Remark"))
+
+    #     ## Voice Control Tab ##
+    #     self.label_voice_cmd_transcript.configure(text=GetLocaleText("Voice_Command_Transcript"))
+    #     self.label_Currently_active_voice_commands.configure(text=GetLocaleText("Currently_active_voice_commands"))
+
+    #     ## Voice Files Tab ##
+    #     self.label_voice_files.configure(text=GetLocaleText("In_Vocola_folder"))
+    #     self.btn_edit_voice_file.configure(text=GetLocaleText("Edit_Voice_File"))
+    #     self.btn_delete_voice_file.configure(text=GetLocaleText("Delete_voice_file"))
+    #     self.tooltip_delete_voice_file.configure(message=GetLocaleText("Delete_voice_file_Description"))
+    #     self.label_voice_cmd_files.configure(text=GetLocaleText("Vocola_Voice_Command_Language_Files"))
+    #     self.btn_download_voice_file.configure(text=GetLocaleText("Download_to_Vocola_folder"))
+    #     self.tooltip_download_voice_file.configure(message=GetLocaleText("Download_to_Vocola_folder_Description"))
+
+    #     self.list_voice_files.heading("#1", text=GetLocaleText("ID"))
+    #     self.list_voice_files.heading("#2", text=GetLocaleText("Filename"))
+
+    #     self.list_voice_cmd_files.heading("#1", text=GetLocaleText("ID"))
+    #     self.list_voice_cmd_files.heading("#2", text=GetLocaleText("Filename"))
+
+    #     ## Footer ##
+    #     self.btn_save.configure(text=GetLocaleText("Save_Preferences_to_QuadStick"))
+    #     self.btn_close.configure(text=GetLocaleText("Close"))
+    #     self.btn_reload.configure(text=GetLocaleText("Reload_Preferences_from_QuadStick"))

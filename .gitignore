@@ -1,0 +1,16 @@
+__pycache__
+build
+dist
+
+settings.repr
+log.txt
+
+# Need testing
+csv_editor.py
+microterm_crossplatform.py
+
+# Test Stuff
+installer
+test.py
+test.xlsx
+NumberInput.py
