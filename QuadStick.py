@@ -1,5 +1,3 @@
-# Copyright @ 2025 GamingMitHandicap.de
-
 import socket
 import customtkinter as ctk
 from tkinter import ttk, filedialog, messagebox
