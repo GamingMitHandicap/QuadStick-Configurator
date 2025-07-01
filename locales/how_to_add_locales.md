@@ -1,4 +1,4 @@
-How to add a locale:
+# How to add a locale:
 
 - Copy the en.ini file in the locales folder and rename it to shortname_of_language.ini
 - Open the .ini file with a text editor.
